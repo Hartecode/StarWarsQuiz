@@ -1,0 +1,166 @@
+body {
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+main {
+  max-width: 850px
+}
+
+section {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 20px;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+} 
+
+li {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.quizQuestion {
+  box-sizing: border-box;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
+
+fieldset {
+  font-size: 20px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type='radio'] {
+  margin-right: 20px;
+}
+
+.sitelogo {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
+.box-settings {
+  border: 5px solid yellow;
+  padding: 20px;
+}
+
+.button-setting {
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: #3d3dff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.button-setting:hover {
+  box-shadow: 0px 0px 10px 1px white;
+}
+
+.button-setting:active {
+  background-color:red;
+  color: white;
+}
+
+.startBn, .tryAgain {
+  display: block;
+  margin: auto;
+}
+
+.questionNumber {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 7px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.currentScore {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid;
+  padding: 7px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.correct {
+  color: #3d3dff; 
+}
+
+.wrong {
+  color: red;
+}
+
+.rightQuestion, .thisIsTheCorrectAnswer {
+  border: 1px solid #3d3dff;
+  color: #3d3dff;
+}
+
+.rightQuestion:after{
+  content: 'Correct! \f00c';
+  font-family: FontAwesome;
+  margin-left: 20px;
+}
+
+.thisIsTheCorrectAnswer:after {
+  content: '**This is the correct answer**';
+  font-family: FontAwesome;
+  margin-left: 20px;
+}
+
+.wrongQuestion {
+  border: 1px solid red;
+  color: red;
+}
+
+.wrongQuestion:after {
+  content: 'Wrong \f00d';
+  font-family: FontAwesome;
+  margin-left: 20px;
+}
+
+.feedback h1, .feedback h2 {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .currentScore {
+    margin-top: 0;
+    float: right;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width:850px) {
+  main {
+    margin: auto;
+  }
+}

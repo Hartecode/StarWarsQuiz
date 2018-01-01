@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a fan quiz which test you knowlegde of the cannon Star Wars franchise.">
+    <title>Star Wars Fan Quiz</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <main role="main">
+      <img role="banner" class="sitelogo" src="img/Star_Wars_Logo.png" alt="star wars logo">
+      <section role="region" class="box-settings start-page">
+        <p>Welcome to the Star Wars Fan quiz! This quiz will test your knowledge of the Star Wars franchise up to the release of Rogue One. Any Star Wars movies, games, and tv shows which were released thereafter do not apply. Click on start to begin.</p>
+        <button class="button-setting startBn" type="button" name="button">Start</button>
+      </section>
+      <section role="region" class="box-settings question-page hidden">
+
+      </section>
+      <section role="region" class="box-settings feedback hidden">
+        <h1>You have <span class="knowledgeLevel"></span> level knowledge</h1>
+        <h2>Score: <span class='score'></span></h2>
+        <ol>
+        </ol>
+        <button class="button-setting tryAgain" type="button" name="button">try again</button>
+      </section>
+    </main>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
